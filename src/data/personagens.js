@@ -4,6 +4,23 @@ const apiLink = process.env.APILINK
 
 const personagens = [
     {
+        nome: "Ajudante",
+        tipo: "Desconhecido",
+        moraEm: "Cabana da Bruxa",
+        casamento: "Nao",
+        melhoresPresentes: [
+            "Maionese nula"
+        ]
+    },
+    {
+        nome: "Avo",
+        tipo: "Homem",
+        endereco: "A vida apos a morte",
+        melhoresPresentes: [
+            "N/A"
+        ]
+    },
+    {
         nome: "Anao",
         tipo: "Desconhecido",
         aniversario: "Verao 22",
@@ -77,7 +94,7 @@ const personagens = [
         ]
     },
     {
-        nome: "Caroliine",
+        nome: "Caroline",
         tipo: "Mulher",
         aniversario: "Inverno 7",
         moraEm: "Vila Pelicanos",
@@ -283,6 +300,37 @@ const personagens = [
             "Escargo",
             "Laranja",
             "Taco de peixe"
+        ]
+    },
+    {
+        nome: "Gil",
+        tipo: "Homem",
+        moraEm: "Vila Pelicanos",
+        endereco: "Guilda dos Aventureiros",
+        casamento: "Nao",
+        melhoresPresentes: [
+            "N/A"
+        ]
+    },
+    {
+        nome: "Governador",
+        tipo: "Homem",
+        aniversario: "Desconhecido",
+        endereco: "Desconhecido",
+        casamento: "Nao",
+        melhoresPresentes: [
+            "N/A"
+        ]
+    },
+    {
+        nome: "Gunther",
+        tipo: "Homem",
+        aniversario: "Desconhecido",
+        moraEm: "Vila Pelicanos",
+        endereco: "Museu",
+        casamento: "Nao",
+        melhoresPresentes: [
+            "Nao recebe presentes"
         ]
     },
     {
@@ -522,6 +570,242 @@ const personagens = [
                 nome: "Sebastian",
                 url: `${apiLink}/personagens/sebastian`
             }
+        ]
+    },
+    {
+        nome: "Marnie",
+        tipo: "Mulher",
+        aniversario: "Outono 18",
+        moraEm: "Floresta Cinzaseiva",
+        endereco: "Rancho da Marnie",
+        familia: [
+            {
+                tipo: "Sobrinha",
+                nome: "Jas",
+                url: `${apiLink}/personagens/jas`
+            },
+            {
+                tipo: "Sobrinha",
+                nome: "Shane",
+                url: `${apiLink}/personagens/shane`
+            }
+        ],
+        casamento: "Nao",
+        visitaAclinica: [
+            "Outono 18",
+            "Inverno 18(com Jas)"
+        ],
+        melhoresPresentes: [
+            "Almoco de fazendeiro",
+            "Bolo rosa",
+            "Diamante",
+            "Torta de abobora"
+        ]
+    },
+    {
+        nome: "Marlon",
+        tipo: "Homem",
+        moraEm: "Vila Pelicanos",
+        endereco: "Guilda dos Aventureiros",
+        casamento: "Nao",
+        melhoresPresentes: [
+            "N/A"
+        ]
+    },
+    {
+        nome: "Morris",
+        tipo: "Homem",
+        moraEm: "Vila Pelicanos",
+        endereco: "Mercado Joja",
+        casamento: "Nao",
+        melhoresPresentes: [
+            "N/A"
+        ]
+    },
+    {
+        nome: "Pam",
+        tipo: "Mulher",
+        aniversario: "Primavera 18",
+        moraEm: "Vila Pelicanos",
+        endereco: "Trailer",
+        familia: [
+            {
+                tipo: "Filha",
+                nome: "Penny",
+                url: `${apiLink}/personagens/penny`
+            }
+        ],
+        casamento: "Nao",
+        visitaAclinica: "Primavera 25",
+        melhoresPresentes: [
+            "Cerveja",
+            "Chirivia",
+            "Fruto do cacto",
+            "Hidromel",
+            "Inhames com cobertura",
+            "Pale Ale",
+            "Pina Colada",
+            "Sopa de chirivia"
+        ]
+    },
+    {
+        nome: "Professor Caracol",
+        tipo: "Homem",
+        aniversario: "Desconhecido",
+        moraEm:	"Ilha Gengibre",
+        endereco: "Escritório local da ilha",
+        casamento: "Não",
+        melhoresPresentes: [
+            "N/A"
+        ]
+    },
+    {
+        nome: "Passarinha",
+        tipo: "Mulher",
+        aniversario: "Desconhecido",
+        moraEm: "Ilha Gengibre",
+        endereco: "Cabana na Regiao Oeste",
+        casamento: "Nao",
+        melhoresPresentes: [
+            "N/A"
+        ]
+    },
+    {
+        nome: "Pierre",
+        tipo: "Mulher",
+        aniversario: "Primavera 26",
+        moraEm: "Vila Pelicanos",
+        endereco: "Armazem do Pierre",
+        familia: [
+            {
+                tipo: "Esposa",
+                nome: "Caroline",
+                url: `${apiLink}/personagens/caroline`
+            },
+            {
+                tipo: "Filha",
+                nome: "Abigail",
+                url: `${apiLink}/personagens/abigail`
+            }
+        ],
+        casamento: "Nao",
+        melhoresPresentes: [
+            "Lula frita"
+        ]
+    },
+    {
+        nome: "Robin",
+        tipo: "Mulher",
+        aniversario: "Outono 21",
+        moraEm: "Vila Pelicanos",
+        endereco: "Rua da Montanha, n*24",
+        familia: [
+            {
+                tipo: "Marido",
+                nome: "Demetrius",
+                url: `${apiLink}/personagens/demetrius`
+            },
+            {
+                tipo: "Filha",
+                nome: "Maru",
+                url: `${apiLink}/personagens/maru`
+            },
+            {
+                tipo: "Filho",
+                nome: "Sebastian",
+                url: `${apiLink}/personagens/sebastian`
+            }
+        ],
+        casamento: "Nao",
+        visitaAclinica: "Verao 18",
+        melhoresPresentes: [
+            "Espaguete",
+            "Pessego",
+            "Queijo de cabra"
+        ]
+    },
+    {
+        nome: "Seguranca",
+        tipo: "Homem",
+        moraEm: "O Deserto",
+        endereco: "Oasis",
+        casamento: "Nao",
+        melhoresPresentes: [
+            "N/A"
+        ]
+    },
+    {
+        nome: "Sr.Qi",
+        tipo: "Desconhecido",
+        moraEm: "Deserto Calico",
+        endereco: [
+            "Cassino(Deserto Calico)",
+            "Sala de Nozes(Ilha Gengibre)"
+        ]
+    },
+    {
+        nome: "Sandy",
+        tipo: "Mulher",
+        aniversario: "Outono 15",
+        moraEm: "O Deserto",
+        endereco: "Oasis",
+        casamento: "Nao",
+        melhoresPresentes: [
+            "Arroz Doce de Manga",
+            "Ervilha-de-cheiro",
+            "Narciso"
+        ]
+    },
+    {
+        nome: "Vincent",
+        tipo: "Menino",
+        aniversario: "Primavera 10",
+        moraEm: "Vila Pelicanos",
+        endereco: "RUa do Salgueiro, n*1",
+        familia: [
+            {
+                tipo: "Mae",
+                nome: "Jodi",
+                url: `${apiLink}/personagens/jodi`
+            },
+            {
+                tipo: "Pai",
+                nome: "Kent",
+                url: `${apiLink}/personagens/kent`
+            },
+            {
+                tipo: "Irmao",
+                nome: "Sam",
+                url: `${apiLink}/personagens/sam`
+            }
+        ],
+        casamento: "Nao",
+        visitaAclinica: "Primavera 11",
+        melhoresPresentes: [
+            "Bolo rosa",
+            "Doce de oxicoco",
+            "Ginger Ale",
+            "Lesma",
+            "Uva"
+        ]
+    },
+    {
+        nome: "Willy",
+        tipo: "Homem",
+        aniversario: "Verao 24",
+        moraEm: "A Praia",
+        endereco: "Peixaria",
+        casamento: "Nao",
+        visitaAclinica: "Primavera 9",
+        melhoresPresentes: [
+            "Abobora",
+            "Bagre",
+            "Barra de iridio",
+            "Diamante",
+            "Esturjao",
+            "Hidromel",
+            "Pepino-do-mar",
+            "Polvo"
         ]
     },
     {
