@@ -4,7 +4,7 @@ const apiLink = process.env.APILINK
 
 const personagens = [
     {
-        nome: "anao",
+        nome: "Anao",
         tipo: "Desconhecido",
         aniversario: "Verao 22",
         moraEm: "As Minas",
@@ -22,8 +22,8 @@ const personagens = [
         ]
     },
     {
-        nome: "alex",
-        tipo: "homem",
+        nome: "Alex",
+        tipo: "Homem",
         aniversario: "Verao 13",
         moraEm: "Vila Pelicanos",
         endereco: "Estrada do Rio, n*1",
@@ -47,8 +47,8 @@ const personagens = [
         ]
     },
     {
-        nome: "abigail",
-        tipo: "mulher",
+        nome: "Abigail",
+        tipo: "Mulher",
         aniversario: "Outono 13",
         moraEm: "Vila dos Pelicanos",
         endereco: "Armazem do Pierre",
@@ -77,8 +77,120 @@ const personagens = [
         ]
     },
     {
-        nome: "elliot",
-        tipo: "homem",
+        nome: "Caroliine",
+        tipo: "Mulher",
+        aniversario: "Inverno 7",
+        moraEm: "Vila Pelicanos",
+        endereco: "Armazem do Pierre",
+        familia: [
+            {
+                tipo: "Marido",
+                nome: "Pierre",
+                url: `${apiLink}/personagens/pierre`,
+            },
+            {
+                tipo: "Filha",
+                nome: "Abigail",
+                url: `${apiLink}/personagens/abigail`
+            }
+        ],
+        casamento: "Nao",
+        visitaAclinica: "Outono 25",
+        melhoresPresentes: [
+            "Cha verde",
+            "Flor-Micanga",
+            "Taco de peixe"
+        ]
+    },
+    {
+        nome: "Clint",
+        tipo: "Homem",
+        aniversario: "Inverno 26",
+        moraEm: "Vila Pelicanos",
+        endereco: "Ferreiro",
+        casamento: "Nao",
+        visitaAclinica: "Inverno 16",
+        melhoresPresentes: [
+            "Agua-Marinha",
+            "Ametista",
+            "Barra de iridio",
+            "Barra de ouro",
+            "Esmeralda",
+            "Jade",
+            "Molho de alcachofra",
+            "Omnigeodo",
+            "Risoto de samambaia",
+            "Rubi",
+            "Topazio"
+        ]
+    },
+    {
+        nome: "Demetrius",
+        tipo: "Homem",
+        aniversario: "Verao 19",
+        moraEm: "A Montanha",
+        endereco: "Rua da Montanha, n*24",
+        familia: [
+            {
+                tipo: "Esposa",
+                nome: "Robin",
+                url: `${apiLink}/personagens/robin`,
+            },
+            {
+                tipo: "Filha",
+                nome: "Maru",
+                url: `${apiLink}/personagens/maru`
+            },
+            {
+                tipo: "Enteado",
+                nome: "Sebastian",
+                url: `${apiLink}/personagens/sebastian`
+            }
+        ],
+        casamento: "Nao",
+        visitaAclinica: "Verao 25",
+        melhoresPresentes: [
+            "Morando",
+            "Pote de feijao",
+            "Pudim de Arroz",
+            "Sorvete"
+        ]
+    },
+    {
+        nome: "Evelyn",
+        tipo: "Mulher",
+        aniversario: "Inverno 20",
+        moraEm: "Vila Pelicanos",
+        endereco: "Estrada do Rio, n* 1",
+        familia: [
+            {
+                tipo: "Marido",
+                nome: "George",
+                url: `${apiLink}/personagens/george`
+            },
+            {
+                tipo: "Neto",
+                nome: "Alex",
+                url: `${apiLink}/personagens/alex`
+            }
+        ],
+        casamento: "Nao",
+        visitaAclinica: [
+            "O 2* de cada estacao",
+            "O 23* de cada estacao(com George)"
+        ],
+        melhoresPresentes: [
+            "Beterraba",
+            "Bolo de chocolate",
+            "Diamante",
+            "Recheio",
+            "Rosa-de-fada",
+            "Tulipa"
+        ]
+    },
+    {
+        nome: "Elliot",
+        tipo: "Homem",
         aniversario: "Outono 5",
         moraEm: "A Praia",
         endereco: "Cabana do Elliot",
@@ -94,8 +206,8 @@ const personagens = [
         ]
     },
     {
-        nome: "emily",
-        tipo: "mulher",
+        nome: "Emily",
+        tipo: "Mulher",
         aniversario: "Primavera 27",
         moraEm: "Vila Pelicanos",
         endereco: "Rua do Salgueiro, n*2",
@@ -121,8 +233,221 @@ const personagens = [
         ]
     },
     {
-        nome: "harvey",
-        tipo: "homem",
+        nome: "Feiticeiro",
+        tipo: "Homem",
+        aniversario: "Floresta Cinzaseiva",
+        moraEm: "Torre do Mago",
+        casamento: "Nao",
+        melhoresPresentes: [
+            "Cogumelo Roxo",
+            "Essencia nula",
+            "Essencia solar",
+            "Superpepino"
+        ]
+    },
+    {
+        nome: "George",
+        tipo: "Homem",
+        aniversario: "Outono 24",
+        moraEm: "Vila Pelicanos",
+        endereco: "Estrada do Rio, n*1",
+        familia: [
+            {
+                tipo: "Esposa",
+                nome: "Evelyn",
+                url: `${apiLink}/personagens/evelyn`
+            },
+            {
+                tipo: "Neto",
+                nome: "Alex",
+                url: `${apiLink}/personagens/alex`
+            }
+        ],
+        casamento: "Nao",
+        visitaAclinica: "O 23* de cada estacao",
+        melhoresPresentes: [
+            "Alho-poro",
+            "Cogumelo Frito"
+        ]
+    },
+    {
+        nome: "Gus",
+        tipo: "Homem",
+        aniversario: "Verao 8",
+        moraEm: "Vila Pelicanos",
+        endereco: "Saloon Fruta Estrelar",
+        casamento: "Nao",
+        visitaAclinica: "Outono 4",
+        melhoresPresentes: [
+            "Diamante",
+            "Escargo",
+            "Laranja",
+            "Taco de peixe"
+        ]
+    },
+    {
+        nome: "Jas",
+        tipo: "menina",
+        aniversario: "Verao 4",
+        moraEm: "Floresta Cinzaseiva",
+        endereco: "Rancho da Marnie",
+        familia: [
+            {
+                tipo: "Tia",
+                nome: "Marnie",
+                url: `${apiLink}/personagens/marnie`
+            },
+            {
+                tipo: "Padrinho",
+                nome: "Shane",
+                url: `${apiLink}/personagens/shane`
+            }
+        ],
+        casamento: "Nao",
+        visitaAclinica: "Inverno 18",
+        melhoresPresentes: [
+            "Bolo rosa",
+            "Pudim de ameixa",
+            "Rosa-de-fada"
+        ]
+    },
+    {
+        nome: "Jodi",
+        tipo: "Mulher",
+        aniversario: "Outono 11",
+        moraEm: "Vila Pelicanos",
+        endereco: "Rua do Salgueiro, n* 1",
+        familia: [
+            {
+                tipo: "Marido",
+                nome: "Kent",
+                url: `${apiLink}/personagens/kent`
+            },
+            {
+                tipo: "Filho",
+                nome: "Sam",
+                url:`${apiLink}/personagens/sam`
+            },
+            {
+                tipo: "Filho",
+                nome: "Vincent",
+                url: `${apiLink}/personagens/vincent`
+
+            }
+        ],
+        casamento: "Nao",
+        visitaAclinica: [
+            "Primavera 11 (com Vincent)",
+            "Primavera 18"
+        ],
+        melhoresPresentes: [
+            "Achiga Crocante",
+            "Bolo de chocolate",
+            "Diamante",
+            "Enguia frita",
+            "Mexido de legumes",
+            "Panquecas",
+            "Parmesao com berinjela",
+            "Torta de ruibarbo"
+        ]
+    },
+    {
+        nome: "Kent",
+        tipo: "Homem",
+        aniversario: "Primavera 4",
+        moraEm: "Vila Pelicanos",
+        endereco: "Rua do Salgueiro, n*1",
+        familia: [
+            {
+                tipo: "Esposa",
+                nome: "Jodi",
+                url: `${apiLink}/personagens/Jodi`
+            },
+            {
+                tipo: "Filho",
+                nome: "Vincent",
+                url: `${apiLink}/personagens/vincent`
+            },
+            {
+                tipo: "Filho",
+                nome: "Sam",
+                url: `${apiLink}/personagens/sam`
+            }
+        ],
+        casamento: "Nao",
+        melhoresPresentes: [
+            "Avelas torradas",
+            "Risoto de samambaia"
+        ]
+
+    },
+    {
+        nome: "Krobus",
+        tipo: "Desconhecido",
+        aniversario: "Inverno 1",
+        moraEm: "Os Esgotos",
+        endereco: "Loja do Krobus",
+        casamento: "Nao(mas pode se tornar um colega de quarto)",
+        melhoresPresentes: [
+            "Abobora",
+            "Barra de iridio",
+            "Diamante",
+            "Maionese nula",
+            "Ovo nulo",
+            "Raiz-forte"
+        ]
+    },
+    {
+        nome: "Leo",
+        tipo: "Menino",
+        aniversario: "Verao 26",
+        moraEm: "Ilha gengibre",
+        endereco: [
+            "Cabana (<6 coracao)",
+            "Casa na arvore (>6 coracao)"
+        ],
+        casamento: "Nao",
+        melhoresPresentes: [
+            "Manga",
+            "Ovo de Avestruz",
+            "Pena de pato",
+            "Poi"
+        ]
+    },
+    {
+        nome: "Lewis",
+        tipo: "Homem",
+        aniversario: "Primavera 7",
+        moraEm: "Vila Pelicanos",
+        endereco: "Mansao do Prefeito",
+        casamento: "Nao",
+        visitaAclinica: "Outono 9",
+        melhoresPresentes: [
+            "Cha verde",
+            "Inhames com cobertura",
+            "Mexido de legumes",
+            "Pimenta quente",
+            "Prato de outono"
+        ]
+    },
+    {
+        nome: "Linus",
+        tipo: "Homem",
+        aniversario: "Inverno 3",
+        moraEm: "A Montanha",
+        endereco: "Tenda",
+        casamento: "Nao",
+        melhoresPresentes: [
+            "Coco",
+            "Fruto do cacto",
+            "Inhame",
+            "Prato do mar",
+            "Torta de Mirtilo"
+        ]
+    },
+    {
+        nome: "Harvey",
+        tipo: "Homem",
         aniversario: "Inverno 14",
         moraEm: "Vila dos pelicanos",
         endereco: "Clinica do Harvey",
@@ -136,8 +461,8 @@ const personagens = [
         ]
     },
     {
-        nome: "harley",
-        tipo: "mulher",
+        nome: "Harley",
+        tipo: "Mulher",
         aniversario: "Primavera 14",
         moraEm: "Vila Pelicanos",
         endereco: "Rua do salgueiro, n* 2",
@@ -159,7 +484,7 @@ const personagens = [
     },
     {
         nome: "Leah",
-        tipo: "mulher",
+        tipo: "Mulher",
         aniversario: "Inverno 23",
         moraEm: "Floresta Cinzaseiva",
         endereco: "Cabana da Leah",
@@ -176,8 +501,8 @@ const personagens = [
         ]
     },
     {
-        nome: "maru",
-        tipo: "mulher",
+        nome: "Maru",
+        tipo: "Mulher",
         aniversario: "Verao 10",
         moraEm: "A Montanha",
         endereco: "Rua da Montanha, n* 24",
@@ -200,8 +525,8 @@ const personagens = [
         ]
     },
     {
-        nome: "sam",
-        tipo: "homem",
+        nome: "Sam",
+        tipo: "Homem",
         aniversario: "Verao 17",
         moraEm: "Vila Pelicanos",
         endereco: "Rua do salgueiro, n* 1",
@@ -232,8 +557,8 @@ const personagens = [
         ]
     },
     {
-        nome: "sebastian",
-        tipo: "homem",
+        nome: "Sebastian",
+        tipo: "Homem",
         aniversario: "Inverno 10",
         moraEm: "A montanha",
         endereco: "Rua da montanha, n* 24",
