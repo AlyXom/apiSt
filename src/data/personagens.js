@@ -4,30 +4,30 @@ const apiLink = process.env.APILINK
 
 const personagens = [
     {
-        nome: "Ajudante",
-        tipo: "Desconhecido",
-        moraEm: "Cabana da Bruxa",
-        casamento: "Nao",
-        melhoresPresentes: [
+        name: "Ajudante",
+        gender: "Desconhecido",
+        lifeIn: "Cabana da Bruxa",
+        marriage: "Nao",
+        bestGifts: [
             "Maionese nula"
         ]
     },
     {
-        nome: "Avo",
-        tipo: "Homem",
-        endereco: "A vida apos a morte",
-        melhoresPresentes: [
+        name: "Avo",
+        gender: "Homem",
+        address: "A vida apos a morte",
+        bestGifts: [
             "N/A"
         ]
     },
     {
-        nome: "Anao",
-        tipo: "Desconhecido",
-        aniversario: "Verao 22",
-        moraEm: "As Minas",
-        endereco: "Caverna oriental",
-        casamento: "Nao",
-        melhoresPresentes: [
+        name: "Anao",
+        gender: "Desconhecido",
+        birthday: "Verao 22",
+        lifeIn: "As Minas",
+        address: "Caverna oriental",
+        marriage: "Nao",
+        bestGifts: [
             "Agua-marinha",
             "Ametista",
             "Esmeralda",
@@ -39,51 +39,51 @@ const personagens = [
         ]
     },
     {
-        nome: "Alex",
-        tipo: "Homem",
-        aniversario: "Verao 13",
-        moraEm: "Vila Pelicanos",
-        endereco: "Estrada do Rio, n*1",
-        familia: [
+        name: "Alex",
+        gender: "Homem",
+        birthday: "Verao 13",
+        lifeIn: "Vila Pelicanos",
+        address: "Estrada do Rio, n*1",
+        family: [
             {
-                tipo: "Avo",
-                nome: "George",
+                type: "Avo",
+                name: "George",
                 url: `${apiLink}/personagens/george`,
             },
             {
-                tipo: "Avo",
-                nome: "Evelyn",
+                type: "Avo",
+                name: "Evelyn",
                 url: `${apiLink}/personagens/evelyn`
             }
         ],
-        casamento: "Sim",
-        visitaAclinica: "Verao 16",
-        melhoresPresentes: [
+        marriage: "Sim",
+        VisitToClinic: "Verao 16",
+        bestGifts: [
             "Cafe da manha completo",
             "Jantar de salmao"
         ]
     },
     {
-        nome: "Abigail",
-        tipo: "Mulher",
-        aniversario: "Outono 13",
-        moraEm: "Vila dos Pelicanos",
-        endereco: "Armazem do Pierre",
-        familia: [
+        name: "Abigail",
+        gender: "Mulher",
+        birthday: "Outono 13",
+        lifeIn: "Vila dos Pelicanos",
+        address: "Armazem do Pierre",
+        family: [
             {
-                tipo: "Pai",
-                nome: "Pierre",
+                type: "Pai",
+                name: "Pierre",
                 url: `${apiLink}/personagens/pierre`
             },
             {
-                tipo: "Mae",
-                nome: "Caroline",
+                type: "Mae",
+                name: "Caroline",
                 url: `${apiLink}/personagens/caroline`
             }
         ],
-        casamento: "Sim",
-        visitaAclinica: "Primavera 4",
-        melhoresPresentes: [
+        marriage: "Sim",
+        VisitToClinic: "Primavera 4",
+        bestGifts: [
             "Abobora",
             "Ametista",
             "Baiacu",
@@ -94,40 +94,40 @@ const personagens = [
         ]
     },
     {
-        nome: "Caroline",
-        tipo: "Mulher",
-        aniversario: "Inverno 7",
-        moraEm: "Vila Pelicanos",
-        endereco: "Armazem do Pierre",
-        familia: [
+        name: "Caroline",
+        gender: "Mulher",
+        birthday: "Inverno 7",
+        lifeIn: "Vila Pelicanos",
+        address: "Armazem do Pierre",
+        family: [
             {
-                tipo: "Marido",
-                nome: "Pierre",
+                type: "Marido",
+                name: "Pierre",
                 url: `${apiLink}/personagens/pierre`,
             },
             {
-                tipo: "Filha",
-                nome: "Abigail",
+                type: "Filha",
+                name: "Abigail",
                 url: `${apiLink}/personagens/abigail`
             }
         ],
-        casamento: "Nao",
-        visitaAclinica: "Outono 25",
-        melhoresPresentes: [
+        marriage: "Nao",
+        VisitToClinic: "Outono 25",
+        bestGifts: [
             "Cha verde",
             "Flor-Micanga",
             "Taco de peixe"
         ]
     },
     {
-        nome: "Clint",
-        tipo: "Homem",
-        aniversario: "Inverno 26",
-        moraEm: "Vila Pelicanos",
-        endereco: "Ferreiro",
-        casamento: "Nao",
-        visitaAclinica: "Inverno 16",
-        melhoresPresentes: [
+        name: "Clint",
+        gender: "Homem",
+        birthday: "Inverno 26",
+        lifeIn: "Vila Pelicanos",
+        address: "Ferreiro",
+        marriage: "Nao",
+        VisitToClinic: "Inverno 16",
+        bestGifts: [
             "Agua-Marinha",
             "Ametista",
             "Barra de iridio",
@@ -142,31 +142,31 @@ const personagens = [
         ]
     },
     {
-        nome: "Demetrius",
-        tipo: "Homem",
-        aniversario: "Verao 19",
-        moraEm: "A Montanha",
-        endereco: "Rua da Montanha, n*24",
-        familia: [
+        name: "Demetrius",
+        gender: "Homem",
+        birthday: "Verao 19",
+        lifeIn: "A Montanha",
+        address: "Rua da Montanha, n*24",
+        family: [
             {
-                tipo: "Esposa",
-                nome: "Robin",
+                type: "Esposa",
+                name: "Robin",
                 url: `${apiLink}/personagens/robin`,
             },
             {
-                tipo: "Filha",
-                nome: "Maru",
+                type: "Filha",
+                name: "Maru",
                 url: `${apiLink}/personagens/maru`
             },
             {
-                tipo: "Enteado",
-                nome: "Sebastian",
+                type: "Enteado",
+                name: "Sebastian",
                 url: `${apiLink}/personagens/sebastian`
             }
         ],
-        casamento: "Nao",
-        visitaAclinica: "Verao 25",
-        melhoresPresentes: [
+        marriage: "Nao",
+        VisitToClinic: "Verao 25",
+        bestGifts: [
             "Morando",
             "Pote de feijao",
             "Pudim de Arroz",
@@ -174,29 +174,29 @@ const personagens = [
         ]
     },
     {
-        nome: "Evelyn",
-        tipo: "Mulher",
-        aniversario: "Inverno 20",
-        moraEm: "Vila Pelicanos",
-        endereco: "Estrada do Rio, n* 1",
-        familia: [
+        name: "Evelyn",
+        gender: "Mulher",
+        birthday: "Inverno 20",
+        lifeIn: "Vila Pelicanos",
+        address: "Estrada do Rio, n* 1",
+        family: [
             {
-                tipo: "Marido",
-                nome: "George",
+                type: "Marido",
+                name: "George",
                 url: `${apiLink}/personagens/george`
             },
             {
-                tipo: "Neto",
-                nome: "Alex",
+                type: "Neto",
+                name: "Alex",
                 url: `${apiLink}/personagens/alex`
             }
         ],
-        casamento: "Nao",
-        visitaAclinica: [
+        marriage: "Nao",
+        VisitToClinic: [
             "O 2* de cada estacao",
             "O 23* de cada estacao(com George)"
         ],
-        melhoresPresentes: [
+        bestGifts: [
             "Beterraba",
             "Bolo de chocolate",
             "Diamante",
@@ -206,14 +206,14 @@ const personagens = [
         ]
     },
     {
-        nome: "Elliot",
-        tipo: "Homem",
-        aniversario: "Outono 5",
-        moraEm: "A Praia",
-        endereco: "Cabana do Elliot",
-        casamento: "Sim",
-        visitaAclinica: "Verao 9",
-        melhoresPresentes: [
+        name: "Elliot",
+        gender: "Homem",
+        birthday: "Outono 5",
+        lifeIn: "A Praia",
+        address: "Cabana do Elliot",
+        marriage: "Sim",
+        VisitToClinic: "Verao 9",
+        bestGifts: [
             "Bolinhos de caranguejo",
             "Lagosta",
             "Pena de pato",
@@ -223,21 +223,21 @@ const personagens = [
         ]
     },
     {
-        nome: "Emily",
-        tipo: "Mulher",
-        aniversario: "Primavera 27",
-        moraEm: "Vila Pelicanos",
-        endereco: "Rua do Salgueiro, n*2",
-        familia: [
+        name: "Emily",
+        gender: "Mulher",
+        birthday: "Primavera 27",
+        lifeIn: "Vila Pelicanos",
+        address: "Rua do Salgueiro, n*2",
+        family: [
             {
-                tipo: "Irma",
-                nome: "Harley",
+                type: "Irma",
+                name: "Harley",
                 url: `${apiLink}/personagens/harley`
             }
         ],
-        casamento: "Sim",
-        visitaAclinica: "Inverno 11",
-        melhoresPresentes: [
+        marriage: "Sim",
+        VisitToClinic: "Inverno 11",
+        bestGifts: [
             "Agua marinha",
             "Ametista",
             "Esmeralda",
@@ -250,12 +250,12 @@ const personagens = [
         ]
     },
     {
-        nome: "Feiticeiro",
-        tipo: "Homem",
-        aniversario: "Floresta Cinzaseiva",
-        moraEm: "Torre do Mago",
-        casamento: "Nao",
-        melhoresPresentes: [
+        name: "Feiticeiro",
+        gender: "Homem",
+        birthday: "Floresta Cinzaseiva",
+        lifeIn: "Torre do Mago",
+        marriage: "Nao",
+        bestGifts: [
             "Cogumelo Roxo",
             "Essencia nula",
             "Essencia solar",
@@ -263,39 +263,39 @@ const personagens = [
         ]
     },
     {
-        nome: "George",
-        tipo: "Homem",
-        aniversario: "Outono 24",
-        moraEm: "Vila Pelicanos",
-        endereco: "Estrada do Rio, n*1",
-        familia: [
+        name: "George",
+        gender: "Homem",
+        birthday: "Outono 24",
+        lifeIn: "Vila Pelicanos",
+        address: "Estrada do Rio, n*1",
+        family: [
             {
-                tipo: "Esposa",
-                nome: "Evelyn",
+                type: "Esposa",
+                name: "Evelyn",
                 url: `${apiLink}/personagens/evelyn`
             },
             {
-                tipo: "Neto",
-                nome: "Alex",
+                type: "Neto",
+                name: "Alex",
                 url: `${apiLink}/personagens/alex`
             }
         ],
-        casamento: "Nao",
-        visitaAclinica: "O 23* de cada estacao",
-        melhoresPresentes: [
+        marriage: "Nao",
+        VisitToClinic: "O 23* de cada estacao",
+        bestGifts: [
             "Alho-poro",
             "Cogumelo Frito"
         ]
     },
     {
-        nome: "Gus",
-        tipo: "Homem",
-        aniversario: "Verao 8",
-        moraEm: "Vila Pelicanos",
-        endereco: "Saloon Fruta Estrelar",
-        casamento: "Nao",
-        visitaAclinica: "Outono 4",
-        melhoresPresentes: [
+        name: "Gus",
+        gender: "Homem",
+        birthday: "Verao 8",
+        lifeIn: "Vila Pelicanos",
+        address: "Saloon Fruta Estrelar",
+        marriage: "Nao",
+        VisitToClinic: "Outono 4",
+        bestGifts: [
             "Diamante",
             "Escargo",
             "Laranja",
@@ -303,92 +303,92 @@ const personagens = [
         ]
     },
     {
-        nome: "Gil",
-        tipo: "Homem",
-        moraEm: "Vila Pelicanos",
-        endereco: "Guilda dos Aventureiros",
-        casamento: "Nao",
-        melhoresPresentes: [
+        name: "Gil",
+        gender: "Homem",
+        lifeIn: "Vila Pelicanos",
+        address: "Guilda dos Aventureiros",
+        marriage: "Nao",
+        bestGifts: [
             "N/A"
         ]
     },
     {
-        nome: "Governador",
-        tipo: "Homem",
-        aniversario: "Desconhecido",
-        endereco: "Desconhecido",
-        casamento: "Nao",
-        melhoresPresentes: [
+        name: "Governador",
+        gender: "Homem",
+        birthday: "Desconhecido",
+        address: "Desconhecido",
+        marriage: "Nao",
+        bestGifts: [
             "N/A"
         ]
     },
     {
-        nome: "Gunther",
-        tipo: "Homem",
-        aniversario: "Desconhecido",
-        moraEm: "Vila Pelicanos",
-        endereco: "Museu",
-        casamento: "Nao",
-        melhoresPresentes: [
+        name: "Gunther",
+        gender: "Homem",
+        birthday: "Desconhecido",
+        lifeIn: "Vila Pelicanos",
+        address: "Museu",
+        marriage: "Nao",
+        bestGifts: [
             "Nao recebe presentes"
         ]
     },
     {
-        nome: "Jas",
-        tipo: "menina",
-        aniversario: "Verao 4",
-        moraEm: "Floresta Cinzaseiva",
-        endereco: "Rancho da Marnie",
-        familia: [
+        name: "Jas",
+        gender: "menina",
+        birthday: "Verao 4",
+        lifeIn: "Floresta Cinzaseiva",
+        address: "Rancho da Marnie",
+        family: [
             {
-                tipo: "Tia",
-                nome: "Marnie",
+                type: "Tia",
+                name: "Marnie",
                 url: `${apiLink}/personagens/marnie`
             },
             {
-                tipo: "Padrinho",
-                nome: "Shane",
+                type: "Padrinho",
+                name: "Shane",
                 url: `${apiLink}/personagens/shane`
             }
         ],
-        casamento: "Nao",
-        visitaAclinica: "Inverno 18",
-        melhoresPresentes: [
+        marriage: "Nao",
+        VisitToClinic: "Inverno 18",
+        bestGifts: [
             "Bolo rosa",
             "Pudim de ameixa",
             "Rosa-de-fada"
         ]
     },
     {
-        nome: "Jodi",
-        tipo: "Mulher",
-        aniversario: "Outono 11",
-        moraEm: "Vila Pelicanos",
-        endereco: "Rua do Salgueiro, n* 1",
-        familia: [
+        name: "Jodi",
+        gender: "Mulher",
+        birthday: "Outono 11",
+        lifeIn: "Vila Pelicanos",
+        address: "Rua do Salgueiro, n* 1",
+        family: [
             {
-                tipo: "Marido",
-                nome: "Kent",
+                type: "Marido",
+                name: "Kent",
                 url: `${apiLink}/personagens/kent`
             },
             {
-                tipo: "Filho",
-                nome: "Sam",
+                type: "Filho",
+                name: "Sam",
                 url:`${apiLink}/personagens/sam`
             },
             {
-                tipo: "Filho",
-                nome: "Vincent",
+                type: "Filho",
+                name: "Vincent",
                 url: `${apiLink}/personagens/vincent`
 
             }
         ],
-        casamento: "Nao",
-        visitaAclinica: [
+        marriage: "Nao",
+        VisitToClinic: [
             "Primavera 11 (com Vincent)",
             "Primavera 18"
         ],
-        melhoresPresentes: [
+        bestGifts: [
             "Achiga Crocante",
             "Bolo de chocolate",
             "Diamante",
@@ -400,43 +400,43 @@ const personagens = [
         ]
     },
     {
-        nome: "Kent",
-        tipo: "Homem",
-        aniversario: "Primavera 4",
-        moraEm: "Vila Pelicanos",
-        endereco: "Rua do Salgueiro, n*1",
-        familia: [
+        name: "Kent",
+        gender: "Homem",
+        birthday: "Primavera 4",
+        lifeIn: "Vila Pelicanos",
+        address: "Rua do Salgueiro, n*1",
+        family: [
             {
-                tipo: "Esposa",
-                nome: "Jodi",
+                type: "Esposa",
+                name: "Jodi",
                 url: `${apiLink}/personagens/Jodi`
             },
             {
-                tipo: "Filho",
-                nome: "Vincent",
+                type: "Filho",
+                name: "Vincent",
                 url: `${apiLink}/personagens/vincent`
             },
             {
-                tipo: "Filho",
-                nome: "Sam",
+                type: "Filho",
+                name: "Sam",
                 url: `${apiLink}/personagens/sam`
             }
         ],
-        casamento: "Nao",
-        melhoresPresentes: [
+        marriage: "Nao",
+        bestGifts: [
             "Avelas torradas",
             "Risoto de samambaia"
         ]
 
     },
     {
-        nome: "Krobus",
-        tipo: "Desconhecido",
-        aniversario: "Inverno 1",
-        moraEm: "Os Esgotos",
-        endereco: "Loja do Krobus",
-        casamento: "Nao(mas pode se tornar um colega de quarto)",
-        melhoresPresentes: [
+        name: "Krobus",
+        gender: "Desconhecido",
+        birthday: "Inverno 1",
+        lifeIn: "Os Esgotos",
+        address: "Loja do Krobus",
+        marriage: "Nao(mas pode se tornar um colega de quarto)",
+        bestGifts: [
             "Abobora",
             "Barra de iridio",
             "Diamante",
@@ -446,16 +446,16 @@ const personagens = [
         ]
     },
     {
-        nome: "Leo",
-        tipo: "Menino",
-        aniversario: "Verao 26",
-        moraEm: "Ilha gengibre",
-        endereco: [
+        name: "Leo",
+        gender: "Menino",
+        birthday: "Verao 26",
+        lifeIn: "Ilha gengibre",
+        address: [
             "Cabana (<6 coracao)",
             "Casa na arvore (>6 coracao)"
         ],
-        casamento: "Nao",
-        melhoresPresentes: [
+        marriage: "Nao",
+        bestGifts: [
             "Manga",
             "Ovo de Avestruz",
             "Pena de pato",
@@ -463,14 +463,14 @@ const personagens = [
         ]
     },
     {
-        nome: "Lewis",
-        tipo: "Homem",
-        aniversario: "Primavera 7",
-        moraEm: "Vila Pelicanos",
-        endereco: "Mansao do Prefeito",
-        casamento: "Nao",
-        visitaAclinica: "Outono 9",
-        melhoresPresentes: [
+        name: "Lewis",
+        gender: "Homem",
+        birthday: "Primavera 7",
+        lifeIn: "Vila Pelicanos",
+        address: "Mansao do Prefeito",
+        marriage: "Nao",
+        VisitToClinic: "Outono 9",
+        bestGifts: [
             "Cha verde",
             "Inhames com cobertura",
             "Mexido de legumes",
@@ -479,13 +479,13 @@ const personagens = [
         ]
     },
     {
-        nome: "Linus",
-        tipo: "Homem",
-        aniversario: "Inverno 3",
-        moraEm: "A Montanha",
-        endereco: "Tenda",
-        casamento: "Nao",
-        melhoresPresentes: [
+        name: "Linus",
+        gender: "Homem",
+        birthday: "Inverno 3",
+        lifeIn: "A Montanha",
+        address: "Tenda",
+        marriage: "Nao",
+        bestGifts: [
             "Coco",
             "Fruto do cacto",
             "Inhame",
@@ -494,13 +494,13 @@ const personagens = [
         ]
     },
     {
-        nome: "Harvey",
-        tipo: "Homem",
-        aniversario: "Inverno 14",
-        moraEm: "Vila dos pelicanos",
-        endereco: "Clinica do Harvey",
-        casamento: "Sim",
-        melhoresPresentes: [
+        name: "Harvey",
+        gender: "Homem",
+        birthday: "Inverno 14",
+        lifeIn: "Vila dos pelicanos",
+        address: "Clinica do Harvey",
+        marriage: "Sim",
+        bestGifts: [
             "Cafe",
             "Oleo de trufa",
             "Picles",
@@ -509,21 +509,21 @@ const personagens = [
         ]
     },
     {
-        nome: "Harley",
-        tipo: "Mulher",
-        aniversario: "Primavera 14",
-        moraEm: "Vila Pelicanos",
-        endereco: "Rua do salgueiro, n* 2",
-        familia: [
+        name: "Harley",
+        gender: "Mulher",
+        birthday: "Primavera 14",
+        lifeIn: "Vila Pelicanos",
+        address: "Rua do salgueiro, n* 2",
+        family: [
             {
-                tipo: "Irma",
-                nome: "Emily",
+                type: "Irma",
+                name: "Emily",
                 url: `${apiLink}/personagens/emily`
             }
         ],
-        casamento: "Sim",
-        visitaAclinica: "Inverno 9",
-        melhoresPresentes: [
+        marriage: "Sim",
+        VisitToClinic: "Inverno 9",
+        bestGifts: [
             "Bolo rosa",
             "Coco",
             "Girassol",
@@ -531,14 +531,14 @@ const personagens = [
         ]
     },
     {
-        nome: "Leah",
-        tipo: "Mulher",
-        aniversario: "Inverno 23",
-        moraEm: "Floresta Cinzaseiva",
-        endereco: "Cabana da Leah",
-        casamento: "Sim",
-        visitaAclinica: "Primavera 16",
-        melhoresPresentes: [
+        name: "Leah",
+        gender: "Mulher",
+        birthday: "Inverno 23",
+        lifeIn: "Floresta Cinzaseiva",
+        address: "Cabana da Leah",
+        marriage: "Sim",
+        VisitToClinic: "Primavera 16",
+        bestGifts: [
             "Bolinho de papoula",
             "Mexido de legumes",
             "Queijo de cabra",
@@ -549,53 +549,53 @@ const personagens = [
         ]
     },
     {
-        nome: "Maru",
-        tipo: "Mulher",
-        aniversario: "Verao 10",
-        moraEm: "A Montanha",
-        endereco: "Rua da Montanha, n* 24",
-        familia: [
+        name: "Maru",
+        gender: "Mulher",
+        birthday: "Verao 10",
+        lifeIn: "A Montanha",
+        address: "Rua da Montanha, n* 24",
+        family: [
             {
-                tipo: "Pai",
-                nome: "Demetrius",
+                type: "Pai",
+                name: "Demetrius",
                 url: `${apiLink}/personagens/demetrius`
             },
             {
-                tipo: "Mae",
-                nome: "Robin",
+                type: "Mae",
+                name: "Robin",
                 url: `${apiLink}/personagens/robin`
             },
             {
-                tipo: "Meio-Irmao",
-                nome: "Sebastian",
+                type: "Meio-Irmao",
+                name: "Sebastian",
                 url: `${apiLink}/personagens/sebastian`
             }
         ]
     },
     {
-        nome: "Marnie",
-        tipo: "Mulher",
-        aniversario: "Outono 18",
-        moraEm: "Floresta Cinzaseiva",
-        endereco: "Rancho da Marnie",
-        familia: [
+        name: "Marnie",
+        gender: "Mulher",
+        birthday: "Outono 18",
+        lifeIn: "Floresta Cinzaseiva",
+        address: "Rancho da Marnie",
+        family: [
             {
-                tipo: "Sobrinha",
-                nome: "Jas",
+                type: "Sobrinha",
+                name: "Jas",
                 url: `${apiLink}/personagens/jas`
             },
             {
-                tipo: "Sobrinha",
-                nome: "Shane",
+                type: "Sobrinha",
+                name: "Shane",
                 url: `${apiLink}/personagens/shane`
             }
         ],
-        casamento: "Nao",
-        visitaAclinica: [
+        marriage: "Nao",
+        VisitToClinic: [
             "Outono 18",
             "Inverno 18(com Jas)"
         ],
-        melhoresPresentes: [
+        bestGifts: [
             "Almoco de fazendeiro",
             "Bolo rosa",
             "Diamante",
@@ -603,41 +603,41 @@ const personagens = [
         ]
     },
     {
-        nome: "Marlon",
-        tipo: "Homem",
-        moraEm: "Vila Pelicanos",
-        endereco: "Guilda dos Aventureiros",
-        casamento: "Nao",
-        melhoresPresentes: [
+        name: "Marlon",
+        gender: "Homem",
+        lifeIn: "Vila Pelicanos",
+        address: "Guilda dos Aventureiros",
+        marriage: "Nao",
+        bestGifts: [
             "N/A"
         ]
     },
     {
-        nome: "Morris",
-        tipo: "Homem",
-        moraEm: "Vila Pelicanos",
-        endereco: "Mercado Joja",
-        casamento: "Nao",
-        melhoresPresentes: [
+        name: "Morris",
+        gender: "Homem",
+        lifeIn: "Vila Pelicanos",
+        address: "Mercado Joja",
+        marriage: "Nao",
+        bestGifts: [
             "N/A"
         ]
     },
     {
-        nome: "Pam",
-        tipo: "Mulher",
-        aniversario: "Primavera 18",
-        moraEm: "Vila Pelicanos",
-        endereco: "Trailer",
-        familia: [
+        name: "Pam",
+        gender: "Mulher",
+        birthday: "Primavera 18",
+        lifeIn: "Vila Pelicanos",
+        address: "Trailer",
+        family: [
             {
-                tipo: "Filha",
-                nome: "Penny",
+                type: "Filha",
+                name: "Penny",
                 url: `${apiLink}/personagens/penny`
             }
         ],
-        casamento: "Nao",
-        visitaAclinica: "Primavera 25",
-        melhoresPresentes: [
+        marriage: "Nao",
+        VisitToClinic: "Primavera 25",
+        bestGifts: [
             "Cerveja",
             "Chirivia",
             "Fruto do cacto",
@@ -649,139 +649,139 @@ const personagens = [
         ]
     },
     {
-        nome: "Professor Caracol",
-        tipo: "Homem",
-        aniversario: "Desconhecido",
-        moraEm:	"Ilha Gengibre",
-        endereco: "Escritório local da ilha",
-        casamento: "Não",
-        melhoresPresentes: [
+        name: "Professor Caracol",
+        gender: "Homem",
+        birthday: "Desconhecido",
+        lifeIn:	"Ilha Gengibre",
+        address: "Escritório local da ilha",
+        marriage: "Não",
+        bestGifts: [
             "N/A"
         ]
     },
     {
-        nome: "Passarinha",
-        tipo: "Mulher",
-        aniversario: "Desconhecido",
-        moraEm: "Ilha Gengibre",
-        endereco: "Cabana na Regiao Oeste",
-        casamento: "Nao",
-        melhoresPresentes: [
+        name: "Passarinha",
+        gender: "Mulher",
+        birthday: "Desconhecido",
+        lifeIn: "Ilha Gengibre",
+        address: "Cabana na Regiao Oeste",
+        marriage: "Nao",
+        bestGifts: [
             "N/A"
         ]
     },
     {
-        nome: "Pierre",
-        tipo: "Mulher",
-        aniversario: "Primavera 26",
-        moraEm: "Vila Pelicanos",
-        endereco: "Armazem do Pierre",
-        familia: [
+        name: "Pierre",
+        gender: "Mulher",
+        birthday: "Primavera 26",
+        lifeIn: "Vila Pelicanos",
+        address: "Armazem do Pierre",
+        family: [
             {
-                tipo: "Esposa",
-                nome: "Caroline",
+                type: "Esposa",
+                name: "Caroline",
                 url: `${apiLink}/personagens/caroline`
             },
             {
-                tipo: "Filha",
-                nome: "Abigail",
+                type: "Filha",
+                name: "Abigail",
                 url: `${apiLink}/personagens/abigail`
             }
         ],
-        casamento: "Nao",
-        melhoresPresentes: [
+        marriage: "Nao",
+        bestGifts: [
             "Lula frita"
         ]
     },
     {
-        nome: "Robin",
-        tipo: "Mulher",
-        aniversario: "Outono 21",
-        moraEm: "Vila Pelicanos",
-        endereco: "Rua da Montanha, n*24",
-        familia: [
+        name: "Robin",
+        gender: "Mulher",
+        birthday: "Outono 21",
+        lifeIn: "Vila Pelicanos",
+        address: "Rua da Montanha, n*24",
+        family: [
             {
-                tipo: "Marido",
-                nome: "Demetrius",
+                type: "Marido",
+                name: "Demetrius",
                 url: `${apiLink}/personagens/demetrius`
             },
             {
-                tipo: "Filha",
-                nome: "Maru",
+                type: "Filha",
+                name: "Maru",
                 url: `${apiLink}/personagens/maru`
             },
             {
-                tipo: "Filho",
-                nome: "Sebastian",
+                type: "Filho",
+                name: "Sebastian",
                 url: `${apiLink}/personagens/sebastian`
             }
         ],
-        casamento: "Nao",
-        visitaAclinica: "Verao 18",
-        melhoresPresentes: [
+        marriage: "Nao",
+        VisitToClinic: "Verao 18",
+        bestGifts: [
             "Espaguete",
             "Pessego",
             "Queijo de cabra"
         ]
     },
     {
-        nome: "Seguranca",
-        tipo: "Homem",
-        moraEm: "O Deserto",
-        endereco: "Oasis",
-        casamento: "Nao",
-        melhoresPresentes: [
+        name: "Seguranca",
+        gender: "Homem",
+        lifeIn: "O Deserto",
+        address: "Oasis",
+        marriage: "Nao",
+        bestGifts: [
             "N/A"
         ]
     },
     {
-        nome: "Sr.Qi",
-        tipo: "Desconhecido",
-        moraEm: "Deserto Calico",
-        endereco: [
+        name: "Sr.Qi",
+        gender: "Desconhecido",
+        lifeIn: "Deserto Calico",
+        address: [
             "Cassino(Deserto Calico)",
             "Sala de Nozes(Ilha Gengibre)"
         ]
     },
     {
-        nome: "Sandy",
-        tipo: "Mulher",
-        aniversario: "Outono 15",
-        moraEm: "O Deserto",
-        endereco: "Oasis",
-        casamento: "Nao",
-        melhoresPresentes: [
+        name: "Sandy",
+        gender: "Mulher",
+        birthday: "Outono 15",
+        lifeIn: "O Deserto",
+        address: "Oasis",
+        marriage: "Nao",
+        bestGifts: [
             "Arroz Doce de Manga",
             "Ervilha-de-cheiro",
             "Narciso"
         ]
     },
     {
-        nome: "Vincent",
-        tipo: "Menino",
-        aniversario: "Primavera 10",
-        moraEm: "Vila Pelicanos",
-        endereco: "RUa do Salgueiro, n*1",
-        familia: [
+        name: "Vincent",
+        gender: "Menino",
+        birthday: "Primavera 10",
+        lifeIn: "Vila Pelicanos",
+        address: "RUa do Salgueiro, n*1",
+        family: [
             {
-                tipo: "Mae",
-                nome: "Jodi",
+                type: "Mae",
+                name: "Jodi",
                 url: `${apiLink}/personagens/jodi`
             },
             {
-                tipo: "Pai",
-                nome: "Kent",
+                type: "Pai",
+                name: "Kent",
                 url: `${apiLink}/personagens/kent`
             },
             {
-                tipo: "Irmao",
-                nome: "Sam",
+                type: "Irmao",
+                name: "Sam",
                 url: `${apiLink}/personagens/sam`
             }
         ],
-        casamento: "Nao",
-        visitaAclinica: "Primavera 11",
-        melhoresPresentes: [
+        marriage: "Nao",
+        VisitToClinic: "Primavera 11",
+        bestGifts: [
             "Bolo rosa",
             "Doce de oxicoco",
             "Ginger Ale",
@@ -790,14 +790,14 @@ const personagens = [
         ]
     },
     {
-        nome: "Willy",
-        tipo: "Homem",
-        aniversario: "Verao 24",
-        moraEm: "A Praia",
-        endereco: "Peixaria",
-        casamento: "Nao",
-        visitaAclinica: "Primavera 9",
-        melhoresPresentes: [
+        name: "Willy",
+        gender: "Homem",
+        birthday: "Verao 24",
+        lifeIn: "A Praia",
+        address: "Peixaria",
+        marriage: "Nao",
+        VisitToClinic: "Primavera 9",
+        bestGifts: [
             "Abobora",
             "Bagre",
             "Barra de iridio",
@@ -809,31 +809,31 @@ const personagens = [
         ]
     },
     {
-        nome: "Sam",
-        tipo: "Homem",
-        aniversario: "Verao 17",
-        moraEm: "Vila Pelicanos",
-        endereco: "Rua do salgueiro, n* 1",
-        familia: [
+        name: "Sam",
+        gender: "Homem",
+        birthday: "Verao 17",
+        lifeIn: "Vila Pelicanos",
+        address: "Rua do salgueiro, n* 1",
+        family: [
             {
-                tipo: "Mae",
-                nome: "Jodi",
+                type: "Mae",
+                name: "Jodi",
                 url: `${apiLink}/personagens/jodi`,
             },
             {
-                tipo: "Pai",
-                nome: "Kent",
+                type: "Pai",
+                name: "Kent",
                 url: `${apiLink}/personagens/kent`
             },
             {
-                tipo: "Irmao",
-                nome: "Vincent",
+                type: "Irmao",
+                name: "Vincent",
                 url: `${apiLink}/personagens/vincent`
             }
         ],
-        casamento: "Sim",
-        visitaAclinica: "Outono 11",
-        melhoresPresentes: [
+        marriage: "Sim",
+        VisitToClinic: "Outono 11",
+        bestGifts: [
             "Fruto cacto",
             "Olho de tigre",
             "Pao de acer",
@@ -841,31 +841,31 @@ const personagens = [
         ]
     },
     {
-        nome: "Sebastian",
-        tipo: "Homem",
-        aniversario: "Inverno 10",
-        moraEm: "A montanha",
-        endereco: "Rua da montanha, n* 24",
-        familia: [
+        name: "Sebastian",
+        gender: "Homem",
+        birthday: "Inverno 10",
+        lifeIn: "A montanha",
+        address: "Rua da montanha, n* 24",
+        family: [
             {
-                tipo: "Mae",
-                nome: "Robin",
+                type: "Mae",
+                name: "Robin",
                 url: `${apiLink}/personagens/robin`
             },
             {
-                tipo: "Padrasto",
-                nome: "Demetrius",
+                type: "Padrasto",
+                name: "Demetrius",
                 url: `${apiLink}/personagens/demetrius`
             },
             {
-                tipo: "Meia-irma",
-                nome: "Maru",
+                type: "Meia-irma",
+                name: "Maru",
                 url: `${apiLink}/personagens/maru`
             }
         ],
-        casamento: "Sim",
-        visitaAclinica: "Verao 4",
-        melhoresPresentes: [
+        marriage: "Sim",
+        VisitToClinic: "Verao 4",
+        bestGifts: [
             "Lagrima congelada",
             "Obisidiana",
             "Ovo nulo",

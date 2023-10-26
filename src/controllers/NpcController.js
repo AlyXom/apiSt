@@ -5,7 +5,7 @@ class NpcController {
         const nome = req.params.nome.toLowerCase()
         console.log(nome)
         const personagem = personagens.filter(item => {
-            if (item.nome == nome) {
+            if (item.nome.toLowerCase() == nome) {
                 return item.nome
             }
         })
